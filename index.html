@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css">
-<script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
 <style>
-html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#panorama {
-    width: 100vw;
-    height: 100vh;
+html,body,#panorama{
+margin:0;
+width:100%;
+height:100%;
+overflow:hidden;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <div id="panorama"></div>
 
 <script>
-pannellum.viewer('panorama', {
-    type: 'equirectangular',
-    panorama: './görsel1.png',
-    autoLoad: true,
-    showControls: true,
-    orientationOnByDefault: true
+pannellum.viewer('panorama',{
+    type:'equirectangular',
+    panorama:'görsel1.png',
+    autoLoad:true,
+    orientationOnByDefault:true,
+    showControls:false
 });
 </script>
 
